@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>淘宝网移动端首页</title>
+<link rel="stylesheet" href="css/css.css">
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/taobao.js"></script>
+<!--动态设置像素比-->
+<script>
+var iScale = 1;
+	iScale = iScale / window.devicePixelRatio;
+	document.write('<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=' + iScale + ',minimum-scale=' + iScale + ',maximum-scale=' + iScale + '">')
+</script>
+<!--动态设置文字大小-->
+
+<script>
+	var iWidth = document.documentElement.clientWidth;
+	document.getElementsByTagName('html')[0].style.fontSize = iWidth / 16 + 'px';
+</script>
+<link rel="icon" href="img/taobaoicot.ico">
+</head>
+
+<body>
+<section class="page pageShow" id="welcome">
+	
+	<div>
+  	<p>淘宝（中国）有限责任公司</p>
+  </div>
+</section>
+
+
+<section class="page" id="indexPage" >
+	<!--搜索 -->
+	<header>
+  	<img src="img/logo.jpg">
+  	<div><a href=" http://s.m.taobao.com/"><span>寻找宝贝店铺</span></a>
+    </div>
+  </header>
+  <!--获取app-->
+  <section id="getApp">
+  	<a href="javascript:;">×</a>
+    <img src="img/logo.jpg">
+    <div>上客户端，领专属好礼</div>
+    <a href="http://m.taobao.com">立即领取</a>
+  </section>
+  <!-- 轮播图 -->
+  <section id="pic" class="clear">
+  	<ul>
+    	
+    </ul>
+    <div>
+   		
+    </div>
+  </section>
+  <!-- 导航-->
+  <nav>
+    <a href="https://www.tmall.com/"><img data-src="img/nav/1.png" src="img/nav/1.png"><p>天猫</p></a>
+    <a href="https://jhs.m.taobao.com/m/index.htm"><img data-src="img/nav/2.png" src="img/nav/2.png"><p>聚划算</p></a>
+    <a href="https://h5.m.taobao.com/app/taoshenghuo/www/index/index.html"><img data-src="img/nav/3.png" src="img/nav/3.png"><p>淘生活</p></a>
+    <a href="https://dd.m.taobao.com/dd/home?page=login"><img data-src="img/nav/4.png" src="img/nav/4.png"><p>淘点点</p></a>
+    <a href="https://h5.m.taobao.com/app/cz/cost.html"><img data-src="img/nav/5.png" src="img/nav/5.png"><p>充值</p></a>
+    <a href="https://h5.m.taobao.com/app/triphome/pages/home/index.html"><img data-src="img/nav/6.png" src="img/nav/6.png"><p>阿里旅行</p></a>
+    <a href="https://h5.m.taobao.com/app/tjb/www/index3.html"><img data-src="img/nav/7.png "src="img/nav/7.png"><p>淘金币</p></a>
+    <a href="https://h5.m.taobao.com/category/index.html"><img data-src="img/nav/8.png" src="img/nav/8.png"><p>分类</p></a>
+   
+  </nav>
+  <!--淘宝头条-->
+  <section id="firstNews">
+  	<img data-src="img/nav/firstNews.jpg" src="img/nav/firstNews.jpg">
+  	<div><span>推荐</span><a href="#">星闻|女明星明星的男闺蜜韩火火</a></div>
+  </section>
+  
+  <!-- 淘抢购-->
+  <section id="buying">
+  	<a href="https://h5.m.taobao.com/purchase/index.html"><img data-src="img/buying/buying1.jpg" ></a>
+    <a href="https://login.m.taobao.com/login.htm"><img data-src="img/buying/buying2.jpg" ></a>
+    <a href="https://h5.m.taobao.com/guang/index.html"><img data-src="img/buying/buying3.jpg" ></a>
+    <a href="https://h5.m.taobao.com/xinpin-v2/index.htm"><img data-src="img/buying/buying4.jpg" ></a>
+    <div class="clear">
+    	<span>00</span><em>:</em><span>00</span><em>:</em><span>00</span>
+    </div>
+  </section>
+  
+  <!-- 超实惠 -->
+  <section class="recommend" id="affordable">
+    <div><img data-src="img/label1.png" ></div>
+    <a href="#"><img data-src="img/recommend/affordable/affordable-1.png" ></a>
+    <a href="#"><img data-src="img/recommend/affordable/affordable-2.png" ></a>
+    <a href="#"><img data-src="img/recommend/affordable/affordable-3.png" ></a>
+    <a href="#"><img data-src="img/recommend/affordable/affordable-4.png" ></a>
+    <a href="#"><img data-src="img/recommend/affordable/affordable-5.png" ></a>
+  </section>
+  
+  <!-- 好品质 -->
+  <section class="recommend" id="quality">
+    <div><img data-src="img/label2.png" ></div>
+    <a href="#"><img data-src="img/recommend/quality/quality-1.png" ></a>
+    <a href="#"><img data-src="img/recommend/quality/quality-2.png" ></a>
+    <a href="#"><img data-src="img/recommend/quality/quality-3.png" ></a>
+    <a href="#"><img data-src="img/recommend/quality/quality-4.png" ></a>
+    <a href="#"><img data-src="img/recommend/quality/quality-5.png" ></a>
+    <a href="#"><img data-src="img/recommend/quality/quality-6.png" ></a>
+    <a href="#"><img data-src="img/recommend/quality/quality-7.png" ></a>
+  </section>
+  
+  <!-- 有特色 -->
+  <section class="recommend" id="characteristic">
+    <div><img data-src="img/label3.png" ></div>
+    <a href="#"><img data-src="img/recommend/characteristic/characteristic-1.png" ></a>
+    <a href="#"><img data-src="img/recommend/characteristic/characteristic-2.png" ></a>
+    <a href="#"><img data-src="img/recommend/characteristic/characteristic-3.png" ></a>
+    <a href="#"><img data-src="img/recommend/characteristic/characteristic-4.png" ></a>
+    <a href="#"><img data-src="img/recommend/characteristic/characteristic-5.png"></a>
+   
+  </section>  
+  <!-- 广告-->
+  <a href="http://m.taobao.com"  class="ad"><img data-src="img/ad/ad-top.png"  ></a> 
+  <!--热门市场-->
+  <section  id="classification">
+  
+ 	 <div class="segment">
+  	<h2>热门市场</h2>
+   	<a class="more" href="http://m.taobao.com">更多！</a>
+    <a href="http://m.taobao.com" class="morelogo"><img src="img/more.png"></a>
+ 	 </div>
+   
+   <ul class="clear">
+   	<li><a href="http://m.taobao.com"><img data-src="img/classification/classification-1.png" ></a></li>
+    <li><a href="http://m.taobao.com"><img data-src="img/classification/classification-2.png" ></a></li>
+    <li><a href="http://m.taobao.com"><img data-src="img/classification/classification-3.png" ></a></li>
+    <li><a href="http://m.taobao.com"><img data-src="img/classification/classification-4.png" ></a></li>
+    <li><a href="http://m.taobao.com"><img data-src="img/classification/classification-5.png" ></a></li>
+    <li><a href="http://m.taobao.com"><img data-src="img/classification/classification-6.png" ></a></li>
+    <li><a href="http://m.taobao.com"><img data-src="img/classification/classification-7.png" ></a></li>
+    <li><a href="http://m.taobao.com"><img data-src="img/classification/classification-8.png" ></a></li>
+    <li><a href="http://m.taobao.com"><img data-src="img/classification/classification-9.png" ></a></li>
+    <li><a href="http://m.taobao.com"><img data-src="img/classification/classification-10.png" ></a></li>
+   </ul>
+  </section>
+  
+  <!-- 广告-->
+  <a href="http://m.taobao.com"  class="ad"><img data-src="img/ad/ad-bottom.png"  ></a> 
+  
+  
+  <!--每日好店-->
+  <section  id="findgood">
+   <div class="segment">
+  	<h2>每日好店</h2>
+   	<a class="more" href="http://m.taobao.com">更新<strong>50</strong>个好店</a>
+    <a href="http://m.taobao.com" class="morelogo"><img src="img/more.png"></a>
+ 	 </div>
+   <ul class="clear">
+   	<li><a href="http://m.taobao.com">
+   	 <img data-src="img/findgood/findgood-1.png" >
+     <p>今日推荐1-3波</p>
+    </a></li>
+    <li><a href="http://m.taobao.com">
+   	 <img data-src="img/findgood/findgood-1.png" >
+     <p>今日推荐1-3波</p>
+    </a></li>
+   </ul>
+    <div class="clear">
+   	<span class="active"></span>
+    <span></span>
+    <span></span>
+   </div>
+  </section>
+  <!---->
+  <section id="youLike">
+  <h2> 猜你喜欢</h2>
+  <ul class="clear">
+  	<li><a href="http://m.taobao.com"><img  data-src="img/youlike/youlike-1.png"></a>
+    <div> <img  data-src="img/youlike/1-p.png"></div>
+    </li>
+    
+    
+  </ul>
+  </section>
+  <!--底部广告图片-->
+  <section id="notKnown">
+  	<h3>不知道买什？么买手帮你挑</h3>
+    <a href="http://m.taobao.com"><img  data-src="img/notKnown.png"></a>
+  </section>
+  <!--底部菜单-->
+  <section id="goTop">
+  	<img src="img/gotop.png">
+  </section>
+  <section id="menu">
+    <a href="http://m.taobao.com">
+      <img src="img/home.png">
+      <span>首页</span>
+    </a>
+    <a href="http://m.taobao.com">
+      <img src="img/logistics.png">
+      <span>物流</span>
+    </a>
+    <a href="http://m.taobao.com">
+      <img src="img/shopping.png">
+      <span>购物车</span>
+    </a>
+    <a href="http://m.taobao.com">
+      <img src="img/mine.png">
+      <span>我的淘宝</span>
+    </a>
+    <a href="http://m.taobao.com">
+      <img src="img/more-a.png">
+      <span>更多</span>
+    </a>
+  </section>
+  <footer>
+  	<a href="http://m.taobao.com">登录</a>
+    <a href="http://m.taobao.com">注册</a>
+    <a href="http://m.taobao.com">电脑版</a>
+    <a href="http://m.taobao.com">用户反馈</a>
+    <div class="clear"><img src="img/c.png"><span>2015</span><span>浙</span><span>2015</span><span>B2-20080224</span><span>服务中心</span></div>
+  </footer>
+
+</section>
+<script>
+fnLoad();
+</script>
+
+</body>
+</html>
